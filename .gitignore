@@ -1,31 +1,34 @@
-# Ignore macOS metadata folders
+# macOS trash
 __MACOSX/
-._*
 .DS_Store
+._*
 
-# Ignore entire SD-128 dataset folder
+# LARGE DATASETS (IGNORE)
 SD-128/
 SD-128/images/
-
-# Ignore any image folders
 images/
+
+# IGNORE IMAGE FILES EXCEPT SMALLS USED FOR DOCS
 *.jpg
 *.jpeg
 *.png
-*.bmp
 *.gif
+*.bmp
 
-# Jupyter junk
+# Jupyter metadata
 .ipynb_checkpoints/
 __pycache__/
 
-# Model files
+# Model checkpoints (TO IGNORE)
 *.h5
 *.ckpt
 *.weights
-*.pkl
-*.npy
 
-# Virtual env folders
+# DO NOT IGNORE .npy  (needed by ML)
+# DO NOT IGNORE .pdf  (project report)
+# DO NOT IGNORE .ipynb
+# DO NOT IGNORE .py
+
+# Virtual environments
 venv/
 env/
